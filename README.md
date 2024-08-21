@@ -6,9 +6,6 @@
 The Secured Crosschain Flex-Bid Protocol is a blockchain solution designed to enable secure and efficient cross-chain bidding processes. This protocol ensures that bids are safely locked, routed, and settled across different blockchain networks, leveraging Ethereum smart contracts, oracles, relayers, and challengers to maintain integrity and security.
 
 
-```bash
-pip install foobar
-```
 
 ## Key Features
 
