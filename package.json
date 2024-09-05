@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@truffle/contract": "^4.6.31",
-    "ethers": "^5.7.2",
-    "truffle": "^5.11.5",
-    "web3": "^1.5.2",
-    "web3-providers-ws": "^4.0.8"
-  }
-}
