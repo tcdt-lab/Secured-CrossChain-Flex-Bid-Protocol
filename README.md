@@ -83,7 +83,7 @@ Cross-Chain Bid Routing: Efficiently routes bids across multiple blockchain laye
 After execution of above steps, if incase their is a conflict or fraudulent activity by relayer, resolving mechanism is emitted. Here, we've idealized the behavior of challenger.
 
 ## Contact
-For any questions or issues, please open an issue in the repository or reach out via your-email@example.com.
+For any questions or issues, please open an issue in the repository or reach out via anukulpokharel2058@gmail.com.
 
 
 
