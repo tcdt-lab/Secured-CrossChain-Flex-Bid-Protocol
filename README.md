@@ -47,7 +47,7 @@ Cross-Chain Bid Routing: Efficiently routes bids across multiple blockchain laye
 2. ### Install Dependencies
    ```bash
    npm install
-3. ### Compile Contracts
+3. ### Compile Contracts (before compiling make sure you have your local ethereum network running)
    ```bash
    truffle compile
 4. ### Migrate Contracts
@@ -59,26 +59,26 @@ Cross-Chain Bid Routing: Efficiently routes bids across multiple blockchain laye
 
    ```bash
    node oracle.js
-2. **Using the interaction script:** Uncomment every number of the script one by one and make sure you've other numbers commented while running one number.
+2. **Use the interaction file:**  Change the directory to Interactions and Run the scripts 
    
    Flow of the execution:
-   + Locking of Assets and creating a new bid.
-   + Setting a new relayer.
-   + Check the relayer details.
-   + Fetch the bid details from layers.
-   + Bidding of transaction by relayers.
+   + Locking of Assets and creating a new bid.(LockAsset.js)
+   + Setting a new relayer.(SetNewRelayer.js)
+   + Check the relayer details.(CheckRelayerDetails.js)
+   + Fetch the bid details from layers.(FetchBidDetails.js)
+   + Bidding of transaction by relayers.(BiddingTransaction.js)
+   + Publishing of transaction hash by the relayer (you can use the HashGenerator.js for generating hash of a transaction) and Publish the transaction hash. (PublishTransaction.js)
+
+### If any fraudulent activity is carried by the relayer i.e submission of incorrect hash to destination chain then challenging mechanism is present which can be done by following scripts.
+
+3. **Deploy DestinationOracle:** You must deploy destination oracle script incase you want to submit a challenge for published hash.
 
    ```bash
    node DestinationOracle.js
-
-3. **Deploy DestinationOracle:**
-
-   ```bash
-   node DestinationOracle.js
-4. **Publishing of Transaction in Challenger contract:**
+4. **Challenging of a transaction hash by a Challenger:**
    
    ```bash
-   node PublishTransaction.js
+   node ChallengeTransaction.js
 
 After execution of above steps, if incase their is a conflict or fraudulent activity by relayer, resolving mechanism is emitted. Here, we've idealized the behavior of challenger.
 
