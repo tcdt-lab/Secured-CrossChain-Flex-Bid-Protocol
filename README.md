@@ -55,7 +55,7 @@ Cross-Chain Bid Routing: Efficiently routes bids across multiple blockchain laye
    truffle migrate
 
 ## Usage
-1. Deploy the oracle script
+1. Deploy the oracle script: This script listens to the asset locking LockingAsset.sol and transfer the corresponding bidIds to different layer. You must run this script before running the LockAsset.js. After the bidIds are transfered to different layers you can stop it.
 
    ```bash
    node oracle.js
